@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.breadcrumps {
+	padding: 0;
+	color: #555;
+}
+
+.breadcrumps li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.breadcrumps li:not(:last-child)::after {
+	content: "";
+	margin: 0 5px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url('../img/arrow-right.svg') no-repeat center;
+	background-size: contain;
+	opacity: .5;
+}
+
+.breadcrumps li a {
+	text-decoration: none;
+	color: #7a99f3;
+	transition: color .25s ease; 
+}
+
+.breadcrumps li a:hover,
+.breadcrumps li a:focus, 
+.breadcrumps li a:active {
+	color: #4963ad;
+}
+
+.circle {
+	width: 300px;
+	height: 300px;
+	font-size: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.sector {
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.circle .sector:nth-child(1) {
+	background: #ad4960;
+	/* border-top-left-radius: 100%;  */
+}
+
+.circle .sector:nth-child(2) {
+	background: #e3c01f;
+	/* border-top-right-radius: 100%;  */
+}
+
+.circle .sector:nth-child(3) {
+	background: #3c8e10;
+	/* border-bottom-left-radius: 100%;  */
+}
+
+.circle .sector:nth-child(4) {
+	background: #157bd2;
+	/* border-bottom-right-radius: 100%;  */
+}
+
+.circle2 {
+	width: 300px;
+	height: 300px;
+	font-size: 0;
+}
+
+.sector2 {
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.circle2 .sector2:nth-child(1) {
+	background: #ad4960;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 100%; 
+/* border-radius: 0 90px 60px 90px */
+}
+
+.circle2 .sector2:nth-child(2) {
+	background: #e3c01f;
+	border-top-right-radius: 100%;
+	border-bottom-right-radius: 100%;
+	border-top-left-radius: 100%;
+}
+
+.circle2 .sector2:nth-child(3) {
+	background: #3c8e10;
+	border-bottom-left-radius: 100%; 
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+
+.circle2 .sector2:nth-child(4) {
+	background: #157bd2;
+	border-bottom-right-radius: 100%;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 100%; 
+}
+
+.links {
+	list-style-type: none;
+}
+
+.links li a {
+	text-decoration: none;
+	color: #555;
+	padding-left: 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.links li a:hover,
+.links li a:focus,
+.links li a:active {
+	color: #ad4960;
+	transition: color .25s ease;
+}
+
+.links li a[target="_blank"] {
+	background-image: url('../img/pop-up.svg');
+}
+
+.links li a[href^="http"] {
+	background-image: url('../img/external.svg');
+}
+
+.links li a[href^="mailto:"] {
+	background-image: url('../img/e-mail.svg');
+}
+
+.links li a[href^="tel:"] {
+	background-image: url('../img/smartphone.svg');
+}
+
+.links li a[href$=".pdf"] {
+	background-image: url('../img/pdf.svg');
+}
+
+.links li a[href$=".doc"], 
+.links li a[href$=".docx"] {
+	background-image: url('../img/word.svg');
+}
+
+.links li a[href$=".xls"], 
+.links li a[href$=".xlsx"] {
+	background-image: url('../img/excel.svg');
+}
+
+
+
+
+
+
+
+
+
+
+
